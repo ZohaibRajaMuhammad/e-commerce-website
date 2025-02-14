@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Login</title>
+    <style>/* General body styles */  
+        body {  
+            background-color: #f9f9f9; /* Light background for contrast */  
+            font-family: 'Arial', sans-serif;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            margin: 0;  
+        }  
+        
+        /* Container for the login form */  
+        .container {  
+            background-color: #ffffff; /* White background for the form */  
+            border-radius: 10px; /* Rounded corners */  
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */  
+            padding: 30px; /* Inner spacing */  
+            width: 300px; /* Fixed width for the form */  
+        }  
+        
+        /* Form heading styles */  
+        h2 {  
+            text-align: center; /* Center the heading */  
+            color: #333; /* Dark gray for heading */  
+            margin-bottom: 20px; /* Spacing below heading */  
+        }  
+        
+        /* Input field styles */  
+        input[type="email"],  
+        input[type="password"] {  
+            width: 100%; /* Full width */  
+            padding: 10px; /* Inner padding */  
+            margin: 10px 0; /* Vertical spacing */  
+            border: 1px solid #ccc; /* Light border */  
+            border-radius: 5px; /* Slight roundness */  
+            transition: border-color 0.3s; /* Smooth transition for focus */  
+        }  
+        
+        /* Input fields on focus */  
+        input[type="email"]:focus,  
+        input[type="password"]:focus {  
+            border-color: #007bff; /* Change border color on focus */  
+            outline: none; /* Remove default outline */  
+        }  
+        
+        /* Button styles */  
+        button {  
+            width: 100%; /* Full width */  
+            background-color: #007bff; /* Blue background */  
+            color: white; /* White text */  
+            padding: 10px; /* Inner padding */  
+            border: none; /* No border */  
+            border-radius: 5px; /* Slight roundness */  
+            cursor: pointer; /* Pointer cursor on hover */  
+            font-size: 16px; /* Font size */  
+            transition: background-color 0.3s; /* Smooth transition */  
+        }  
+        
+        /* Button hover effect */  
+        button:hover {  
+            background-color: #0056b3; /* Darker blue on hover */  
+        }  
+        
+        /* Paragraph styles */  
+        p {  
+            text-align: center; /* Center the text */  
+            margin-top: 15px; /* Space above the paragraph */  
+        }  
+        
+        /* Link styles */  
+        a {  
+            color: #007bff; /* Blue link color */  
+            text-decoration: none; /* No underline */  
+            transition: color 0.3s; /* Smooth transition for hover effect */  
+        }  
+        
+        /* Link hover effect */  
+        a:hover {  
+            color: #0056b3; /* Darker blue on hover */  
+        }  </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div id="loginForm" class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>New user? <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

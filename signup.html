@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>/* Overall body styling */  
+        body {  
+            background-color: #f4f4f4; /* Light grey background for subtle contrast */  
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh; /* Fill the entire viewport height */  
+            margin: 0; /* Remove default margin */  
+        }  
+        
+        /* Container for the sign-up form */  
+        .container {  
+            background-color: #ffffff; /* White background for the form */  
+            border-radius: 12px; /* Smooth rounded corners */  
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Strong shadow for depth */  
+            padding: 40px; /* Padding inside the container */  
+            width: 350px; /* Fixed width for consistency */  
+        }  
+        
+        /* Heading styles */  
+        h2 {  
+            text-align: center; /* Center the heading */  
+            color: #444; /* Darker grey for improved readability */  
+            margin-bottom: 30px; /* Space below the heading */  
+        }  
+        
+        /* Input field styling */  
+        input[type="email"],  
+        input[type="password"],
+        
+        input[type="Name"] {  
+            width: 100%; /* Full-width inputs */  
+            padding: 12px; /* Inner padding for comfort */  
+            margin: 10px 0; /* Vertical spacing */  
+            border: 1px solid #ddd; /* Light border */  
+            border-radius: 6px; /* Slightly rounded corners */  
+            font-size: 14px; /* Font size for input */  
+            transition: border 0.3s, box-shadow 0.3s; /* Smooth transitions */  
+        }  
+        
+        /* Input focus state */  
+        input[type="email"]:focus,  
+        input[type="password"]:focus ,
+        
+        input[type="Name"]{  
+            border-color: #4caf50; /* Change border color on focus */  
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Green shadow on focus */  
+            outline: none; /* Remove default outline */  
+        }  
+        
+        /* Button styling */  
+        button {  
+            width: 100%; /* Full width for button */  
+            background-color: #4caf50; /* Green background for the button */  
+            color: white; /* White text */  
+            padding: 12px; /* Internal padding */  
+            border: none; /* No border */  
+            border-radius: 6px; /* Rounded corners */  
+            cursor: pointer; /* Pointer cursor on hover */  
+            font-size: 16px; /* Larger font */  
+            transition: background-color 0.3s, transform 0.2s; /* Transition effects */  
+        }  
+        
+        /* Button hover effect */  
+        button:hover {  
+            background-color: #45a049; /* Darker green on hover */  
+            transform: translateY(-2px); /* Lift effect on hover */  
+        }  
+        
+        /* Paragraph styling */  
+        p {  
+            text-align: center; /* Center the paragraph */  
+            margin-top: 20px; /* Spacing above the paragraph */  
+        }  
+        
+        /* Link styling */  
+        a {  
+            color: #4caf50; /* Green link color */  
+            text-decoration: none; /* No underline */  
+            transition: color 0.3s; /* Smooth color transition */  
+        }  
+        
+        /* Link hover effect */  
+        a:hover {  
+            color: #388e3c; /* Darker green on hover */  
+        }  
+        </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div  id="signupForm" class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="Name" id="signupName" placeholder="Enter Name"  required>
+            <input type="email" id="signupEmail" placeholder="Enter Email" required>
+            <input type="password" id="signupPassword" placeholder="Enter Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
